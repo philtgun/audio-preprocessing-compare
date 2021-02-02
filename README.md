@@ -1,14 +1,12 @@
-# Python Template
+# Audio Preprocessing Compare
 
-Has pre-commit hooks that I like with line length of 120.
+Compare the performance of decoding MP3 files and resampling
 
 ```shell
 python3.9 -m venv venv
 source venv/bin/activate.fish
 pip install --upgrade pip setuptools wheel
+pip install -r requirements.txt
 ```
 
-## Dev
-```shell
-pip install pre-commit
-```
+Install librosa, essentia and torchaudio by yourself, as it might require something more than just pip install.
